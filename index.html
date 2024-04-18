@@ -1,32 +1,32 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko-KR">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 	<link rel="stylesheet" href="./css/style.css">
 	<script src="./script.js" defer></script>
-	<title>웹 접근성 기초 교육</title>
+	<title>웹 접근성 기초 교육 샘플 페이지</title>
 </head>
 <body>
 	<header class="flex">
-		<h1 class="logo">
-			<a href="#">
-				<img src="./image/H&C_logo.png" alt="HTML/CSS 웹 접근성 교육 로고">
+		<h2 class="logo">
+			<a href="#" tabindex="1">
+				<img src="./image/H&C_logo.png" alt="로고">
 			</a>
-		</h1>
+		</h2>
 		<button type="button" class="button-menu" aria-expanded="false">
 			<img src="./image/MWEB/Button/Menu.svg" alt="메뉴">
 		</button>
 		<div class="menu-display">
 			<div class="menu-pc flex">
 				<nav>
-					<h2 class="screen_out">메인 메뉴</h2>
+					<h1 class="screen_out">메인 메뉴</h1>
 					<ul class="menu-list flex">
-						<li><a href="#">menu_1</a></li>
-						<li><a href="#">menu_2</a></li>
-						<li><a href="#">menu_3</a></li>
-						<li><a href="#">menu_4</a></li>
+						<li>menu_1</li>
+						<li>menu_2</li>
+						<li>menu_3</li>
+						<li>menu_4</li>
 					</ul>
 				</nav>
 				<div class="button-sign flex">
@@ -39,16 +39,15 @@
 	<main>
 		<fieldset class="search-field">
 			<legend class="screen_out">검색</legend>
-			<label for="searchStrory" class="screen_out">우니의 스토리 검색</label>
-			<input type="search" placeholder="검색어를 입력해주세요." id="searchStrory">
+			<label for="searchStrory" class="screen_out"></label>
+			<input type="search" placeholder="검색어를 입력해주세요." id="searchStrory" tabindex="1">
 			<button type="button" class="search-button">
 				<span class="material-symbols-outlined">search</span>
-				<span class="screen_out">검색</span>
 			</button>
 		</fieldset>
 		<section class="content-story">
 			<div class="flex">
-				<h2 class="content-title">우니의 스토리</h2>
+				<h1 class="content-title">우니의 스토리</h1>
 				<ul class="tab-menu flex">
 					<li><button type="button" class="tab-button active">월간</button></li>
 					<li><button type="button" class="tab-button">연간</button></li>
@@ -57,7 +56,7 @@
 			<div class="box-story grid">
 				<article class="story flex">
 					<h3 class="story-title">4월</h3>
-					<img class="story-photo" src="./image/photo_april.jpeg" alt="머리에 스티커 붙은 우니">
+					<img class="story-photo" src="./image/photo_april.jpeg">
 					<div class="stroy-description">
 						<p>머리에 스티커 붙이고 있는 우니</p>
 						<p>"빨리 떼줘!"</p>
@@ -65,7 +64,7 @@
 				</article>
 				<article class="story flex">
 					<h3 class="story-title">3월</h3>
-					<img class="story-photo" src="./image/photo_march.jpeg" alt="러그에 발톱을 긁고 있는 우니">
+					<img class="story-photo" src="./image/photo_march.jpeg">
 					<div class="stroy-description">
 						<p>새로 산 러그(라고 쓰고 스크래쳐라고 읽는다)가 맘에 쏙 든 우니</p>
 						<p>“긁는 느낌 좋은데?”</p>
@@ -73,7 +72,7 @@
 				</article>
 				<article class="story flex">
 					<h3 class="story-title">2월</h3>
-					<img class="story-photo" src="./image/photo_february.jpeg" alt="몸을 말고 자고 있는 우니">
+					<img class="story-photo" src="./image/photo_february.jpeg">
 					<div class="stroy-description">
 						<p>일하는 집사 기다리다가 잠든 우니</p>
 						<p>"넌 일하지? 난 잔다~"</p>
@@ -82,7 +81,7 @@
 			</div>
 		</section>
 		<section class="content-present">
-			<h2 class="content-title">우니의 선물</h2>
+			<h1 class="content-title">우니의 선물</h1>
 			<article class="present flex">
 				<div class="present-description">
 					<p class="present-title">우니한테 간식 주기</p>
@@ -106,16 +105,16 @@
 			</article>
 		</section>
 		<div class="content-banner flex">
-			<img class="banner-image" src="./image/banner_image.png" alt="사랑스러운 우니를 더 보고싶다면?">
+			<img class="banner-image" src="./image/banner_image.png" alt="">
 			<a href="#" class="banner-link">더보기</a>
 		</div>
 		<section class="content-question">
-			<h2 class="content-title">자주 묻는 질문</h2>
+			<h1 class="content-title">자주 묻는 질문</h1>
 			<div class="question-list">
 				<div>
 					<button type="button" class="question flex toggle-button" aria-expanded="false">
 						<p>우니는 몇 살인가요?</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="answer toggle-detail">
 						<p>미운 3살 입니다~</p>
@@ -124,7 +123,7 @@
 				<div>
 					<button type="button" class="question flex toggle-button" aria-expanded="false">
 						<p>우니는 남자아이 인가요? 여자아이 인가요?</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="answer toggle-detail">
 						<p>미묘의 남자아이입니다!</p>
@@ -133,7 +132,7 @@
 				<div>
 					<button type="button" class="question flex toggle-button" aria-expanded="false">
 						<p>우니가 제일 좋아하는 것은 뭔가요?</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="answer toggle-detail">
 						<p>저요!..라고 하고싶지만 역시 간식일듯 합니다ㅎㅎ</p>
@@ -142,7 +141,7 @@
 				<div>
 					<button type="button" class="question flex toggle-button" aria-expanded="false">
 						<p>우니는 애교가 많나요?</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="answer toggle-detail">
 						<p>얼굴이 애교입니다!</p>
@@ -153,13 +152,13 @@
 	</main>
 	<footer>
 		<section class="grid">
-			<h2 class="footer-title">접근성팀 - 어머니 : 미아(mia.j)</h2>
+			<h1 class="footer-title">접근성팀 - 어머니 : 미아(mia.j)</h1>
 			<article class="part">
 				<h3 class="part-name">1파트(교육)</h3>
 				<div class="part-member">
 					<button type="button" class="member-name flex toggle-button" aria-expanded="false">
 						<p>칸(kan.k - 파트장)</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="member-description toggle-detail">
 						<p>공감 능력이 매우 좋은 대문자T</p>
@@ -168,7 +167,7 @@
 				<div class="part-member">
 					<button type="button" class="member-name flex toggle-button" aria-expanded="false">
 						<p>레스더(resther.ryu)</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="member-description toggle-detail">
 						<p>보고 싶은 레스더~ 어서 돌아와요!</p>
@@ -177,7 +176,7 @@
 				<div class="part-member">
 					<button type="button" class="member-name flex toggle-button" aria-expanded="false">
 						<p>웨인(wayne.t)</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="member-description toggle-detail">
 						<p>접근성팀 막내 및 세심함 담당중, 꽃을 든 남자</p>
@@ -186,7 +185,7 @@
 				<div class="part-member">
 					<button type="button" class="member-name flex toggle-button" aria-expanded="false">
 						<p>로웰(lowell.0704)</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="member-description toggle-detail">
 						<p>접근성팀 웃음과 소맥을 담당중, 우울할 때는 로웰을 찾아주세요!</p>
@@ -195,7 +194,7 @@
 				<div class="part-member">
 					<button type="button" class="member-name flex toggle-button" aria-expanded="false">
 						<p>맥스(max.0420)</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="member-description toggle-detail">
 						<p>솔드아웃, 유부초밥 입니다.</p>
@@ -204,7 +203,7 @@
 				<div class="part-member">
 					<button type="button" class="member-name flex toggle-button" aria-expanded="false">
 						<p>마리(mari.gold)</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="member-description toggle-detail">
 						<p>마리입니다~</p>
@@ -213,7 +212,7 @@
 				<div class="part-member">
 					<button type="button" class="member-name flex toggle-button" aria-expanded="false">
 						<p>월드(world.wide)</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="member-description toggle-detail">
 						<p>내용</p>
@@ -225,7 +224,7 @@
 				<div class="part-member">
 					<button type="button" class="member-name flex toggle-button" aria-expanded="false">
 						<p>이든(eden.m - 파트장)</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="member-description toggle-detail">
 						<p>이든을 킹받게 하지마세요!</p>
@@ -234,7 +233,7 @@
 				<div class="part-member">
 					<button type="button" class="member-name flex toggle-button" aria-expanded="false">
 						<p>리암(liam.j)</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="member-description toggle-detail">
 						<p>죄송합니다.</p>
@@ -243,7 +242,7 @@
 				<div class="part-member">
 					<button type="button" class="member-name flex toggle-button" aria-expanded="false">
 						<p>카일라(kayla.k)</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="member-description toggle-detail">
 						<p>이든 킹받게 하기 1인자</p>
@@ -252,7 +251,7 @@
 				<div class="part-member">
 					<button type="button" class="member-name flex toggle-button" aria-expanded="false">
 						<p>델리(deli.ce)</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="member-description toggle-detail">
 						<p>야구 보러 가실래요?(from.리암)</p>
@@ -261,7 +260,7 @@
 				<div class="part-member">
 					<button type="button" class="member-name flex toggle-button" aria-expanded="false">
 						<p>웬디(wendy.112)</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="member-description toggle-detail">
 						<p>접근성팀 귀여움 담당, 세상에서 내가 제일 귀여워!</p>
@@ -270,7 +269,7 @@
 				<div class="part-member">
 					<button type="button" class="member-name flex toggle-button" aria-expanded="false">
 						<p>폴라(polar.09)</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="member-description toggle-detail">
 						<p>숙취 없는 강한 여성</p>
@@ -279,7 +278,7 @@
 				<div class="part-member">
 					<button type="button" class="member-name flex toggle-button" aria-expanded="false">
 						<p>조셉(joseph.13)</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="member-description toggle-detail">
 						<p>내용</p>
@@ -291,7 +290,7 @@
 				<div class="part-member">
 					<button type="button" class="member-name flex toggle-button" aria-expanded="false">
 						<p>아마라(amara.w - 파트장)</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="member-description toggle-detail">
 						<p>아씨 이모티콘(뭔지는 알아서 검색해주세요.)</p>
@@ -300,7 +299,7 @@
 				<div class="part-member">
 					<button type="button" class="member-name flex toggle-button" aria-expanded="false">
 						<p>제니(jenny.c)</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="member-description toggle-detail">
 						<p>접근성팀 다정함을 담당중, 항상 커피 타주셔서 감사해요~~</p>
@@ -309,7 +308,7 @@
 				<div class="part-member">
 					<button type="button" class="member-name flex toggle-button" aria-expanded="false">
 						<p>헤이즐(hazel.j)</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="member-description toggle-detail">
 						<p>술과 항상 함께하고 있습니다.</p>
@@ -318,7 +317,7 @@
 				<div class="part-member">
 					<button type="button" class="member-name flex toggle-button" aria-expanded="false">
 						<p>엘리자(eliza.d)</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="member-description toggle-detail">
 						<p>잘 부탁드립니다(from.제임스)</p>
@@ -327,7 +326,7 @@
 				<div class="part-member">
 					<button type="button" class="member-name flex toggle-button" aria-expanded="false">
 						<p>제임스(james.42)</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="member-description toggle-detail">
 						<p>집인데 집에 가고 싶어요</p>
@@ -336,7 +335,7 @@
 				<div class="part-member">
 					<button type="button" class="member-name flex toggle-button" aria-expanded="false">
 						<p>카이(kai.0725)</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="member-description toggle-detail">
 						<p>내용</p>
@@ -348,7 +347,7 @@
 				<div class="part-member">
 					<button type="button" class="member-name flex toggle-button" aria-expanded="false">
 						<p>민디(mindy.b - 파트장)</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="member-description toggle-detail">
 						<p>당근을 흔들어주세요~~</p>
@@ -357,7 +356,7 @@
 				<div class="part-member">
 					<button type="button" class="member-name flex toggle-button" aria-expanded="false">
 						<p>칸(kan.k)</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="member-description toggle-detail">
 						<p>공감 능력이 매우 좋은 대문자T</p>
@@ -366,7 +365,7 @@
 				<div class="part-member">
 					<button type="button" class="member-name flex toggle-button" aria-expanded="false">
 						<p>이든(eden.m)</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="member-description toggle-detail">
 						<p>이든을 킹받게 하지마세요!</p>
@@ -375,7 +374,7 @@
 				<div class="part-member">
 					<button type="button" class="member-name flex toggle-button" aria-expanded="false">
 						<p>아마라(amara.w)</p>
-						<span class="material-symbols-outlined expand-more" aria-hidden="true">expand_more</span>
+						<span class="material-symbols-outlined expand-more">expand_more</span>
 					</button>
 					<div class="member-description toggle-detail">
 						<p>아씨 이모티콘(뭔지는 알아서 검색해주세요.)</p>

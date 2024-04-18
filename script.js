@@ -53,3 +53,9 @@ for (let i = 0; i < toggleButton.length; i++) {
 	})
 	
 }
+
+document.addEventListener("keydown", function (event) {
+	if (event.key === "Enter"){
+		event.preventDefault();
+	}
+})

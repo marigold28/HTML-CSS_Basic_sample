@@ -117,7 +117,7 @@ main {
 .button-sign-in {
 	height: 2.5rem;
 	color: var(--primary, #F8E856);
-	border: 1px solid var(--primary, #F8E856);
+	outline: 1px solid var(--primary, #F8E856);
 	margin-right: 0.7rem;
 }
 
