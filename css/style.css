@@ -478,6 +478,10 @@ section {
 		border-radius: 0.625rem;
 	}
 
+	.banner-button:focus {
+		outline: 0;
+	}
+
 	.content-question .content-title {
 		margin-bottom: 1.25rem;
 	}
