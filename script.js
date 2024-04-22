@@ -50,8 +50,7 @@ const toggleButton = document.querySelectorAll(".toggle-button");
 const toggleDescription = document.querySelectorAll(".toggle-detail")
 const toggleIcon = document.querySelectorAll(".expand-more")
 
-console.log(toggleButton[1]);
-
+//toggle
 for (let i = 0; i < toggleButton.length; i++) {
 	toggleButton[i].addEventListener ("click", function () {
 		toggleDescription[i].classList.toggle("toggle-display");
@@ -59,6 +58,7 @@ for (let i = 0; i < toggleButton.length; i++) {
 	})
 }
 
+//aria-expanded 
 for (let i = 0; i < toggleButton.length; i++) {
 	toggleButton[i].addEventListener ("click", function () {
 		if (toggleButton[i].ariaExpanded === "false") {
@@ -70,8 +70,12 @@ for (let i = 0; i < toggleButton.length; i++) {
 	
 }
 
-document.addEventListener("keydown", function (event) {
-	if (event.key === "Enter"){
-		event.preventDefault();
-	}
-})
+//enter,spacebar keybord event
+for (let i = 0; i < toggleButton.length; i++) {
+	toggleButton[i].addEventListener("keydown", function (event) {
+		if ((event.key === "Enter") || (event.key === " ")){
+			event.preventDefault();
+		}
+	})
+	
+}
