@@ -48,12 +48,16 @@
 		<section class="content-story">
 			<div class="flex">
 				<h1 class="content-title">우니의 스토리</h1>
-				<ul class="tab-menu flex">
-					<li><button type="button" class="tab-button active">월간</button></li>
-					<li><button type="button" class="tab-button">연간</button></li>
+				<ul class="tab-menu flex" role="tablist">
+					<li role="presentation">
+						<button type="button" class="tab-button active" role="tab" aria-controls="storyPanelMonthly" aria-selected="true">월간</button>
+					</li>
+					<li role="presentation">
+						<button type="button" class="tab-button" role="tab" aria-controls="storyPanelYearly" aria-selected="false">연간</button>
+					</li>
 				</ul>
 			</div>
-			<div class="box-story grid">
+			<div class="box-story display" id="storyPanelMonthly">
 				<article class="story flex">
 					<h3 class="story-title">4월</h3>
 					<img class="story-photo" src="./image/photo_april.jpeg">
@@ -77,6 +81,17 @@
 						<p>일하는 집사 기다리다가 잠든 우니</p>
 						<p>"넌 일하지? 난 잔다~"</p>
 					</div>
+				</article>
+			</div>
+			<div class="box-story" id="storyPanelYearly">
+				<article class="story">
+					<p>준비중 입니다.</p>
+				</article>
+				<article class="story">
+					<p>준비중 입니다.</p>
+				</article>
+				<article class="story">
+					<p>준비중 입니다.</p>
 				</article>
 			</div>
 		</section>

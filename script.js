@@ -1,17 +1,14 @@
 
 //resize
 const menuRW = document.querySelector(".menu-pc");
-const storyContent = document.querySelector(".box-story");
 
 window.onresize = function singularResize() {
 	const windowWidth = window.innerWidth;
 
 	if(windowWidth >= 1024){
 		menuRW.className = "menu-pc";
-		storyContent.className += " grid"		
 	} else {
 		menuRW.className = "menu-mobile";
-		storyContent.className = "";
 	}
 }
 
@@ -27,6 +24,25 @@ menuButton.addEventListener("click", function () {
 		menuDisplay.style.display = "none";
 		menuButton.ariaExpanded = "false"
 	}
+});
+
+//tab-menu
+const tabButtons = document.querySelectorAll(".tab-button");
+const tabPanels = document.querySelectorAll(".box-story")
+
+tabButtons.forEach((button, index) => {
+	button.addEventListener("click", () => {
+		tabButtons.forEach(otherButton => {
+			otherButton.classList.remove("active");
+			otherButton.ariaSelected = "false"
+		});
+		tabPanels.forEach(otherPanel => {
+			otherPanel.classList.remove("display");
+		});
+		tabButtons[index].classList.add("active");
+		tabButtons[index].ariaSelected = "true"
+		tabPanels[index].classList.add("display");
+	});
 });
 
 //toggle accordion

@@ -188,6 +188,16 @@ section {
 	border-color: var(--primary);
 }
 
+.box-story {
+	display: none;
+	grid-template-rows: repeat(3, 1fr);
+	gap: 1.25rem;
+}
+
+.display {
+	display: grid;
+}
+
 .story {
 	padding: 4vw;
 	align-items: flex-start;
@@ -220,6 +230,11 @@ section {
 
 .stroy-description p {
 	color: var(--gray-400);
+}
+
+#storyPanelYearly p {
+	height: 469.99px;
+	line-height: 469.88px;
 }
 
 .present {
@@ -420,9 +435,15 @@ section {
 		justify-content: center;
 	}
 
-	.content-story > .grid {
+	.box-story {
+		display: none;
 		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: none;
 		gap: 1.25rem;
+	}
+
+	.display {
+		display: grid;
 	}
 
 	.content-title {
